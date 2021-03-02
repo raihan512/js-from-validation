@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Form Valisation With Javascript</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <div class="container-fluid header_full">
+        <div class="container">
+            <div class="card">
+              <form method="" action="">
+                  <div class="card-header card_header">
+                    <i class="fa fa-gg-circle"></i> User Registration
+                  </div>
+                  <div class="card-body">
+                     <div class="form-group row form_group">
+                        <label for="" class="col-sm-3 col-form-label">Name:<span class="req_star">*</span></label>
+                        <div class="col-sm-7">
+                          <input type="text" class="form-control" id="name" name="">
+                          <div class="error_mess" id="name_error"></div>
+                        </div>
+                      </div>
+                      <div class="form-group row form_group">
+                        <label for="" class="col-sm-3 col-form-label">Phone:<span class="req_star">*</span></label>
+                        <div class="col-sm-7">
+                          <input type="text" class="form-control" id="phone" name="">
+                          <div class="error_mess" id="phone_error"></div>
+                        </div>
+                      </div>
+                      <div class="form-group row form_group">
+                        <label for="" class="col-sm-3 col-form-label">Username:<span class="req_star">*</span></label>
+                        <div class="col-sm-7">
+                          <input type="text" class="form-control" id="user" name="">
+                          <div class="error_mess" id="user_error"></div>
+                        </div>
+                      </div>
+                      <div class="form-group row form_group">
+                        <label for="" class="col-sm-3 col-form-label">Email:<span class="req_star">*</span></label>
+                        <div class="col-sm-7">
+                          <input type="email" class="form-control" id="email" name="">
+                          <div class="error_mess" id="email_error"></div>
+                        </div>
+                      </div>
+                      <div class="form-group row form_group">
+                        <label for="" class="col-sm-3 col-form-label">Password:<span class="req_star">*</span></label>
+                        <div class="col-sm-7">
+                          <input type="password" class="form-control" id="pass" name="">
+                          <div class="error_mess" id="pass_error"></div>
+                        </div>
+                      </div>
+                      <div class="form-group row form_group">
+                        <label for="" class="col-sm-3 col-form-label">Confirm-Password:</label>
+                        <div class="col-sm-7">
+                          <input type="password" class="form-control" id="repass" name="">
+                          <div class="error_mess" id="repass_error"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button type="submit" onclick="return formValidation()" class="btn btn-md btn-info">REGISTRATION</button>
+                    </div>
+                </form>
+            </div>  
+        </div>
+      </div>
+      <script src="js/jquery-3.5.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+  </body>
+</html>
